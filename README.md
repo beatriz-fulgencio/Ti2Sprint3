@@ -2,16 +2,26 @@
 ## Passos de como testar Entrega
 ### 1. Criação dos Bancos de dados
 CREATE TABLE IF NOT EXISTS public.usuario
+
 (
     idusuario integer NOT NULL DEFAULT nextval('usuario_idusuario_seq'::regclass),
+    
     email character varying(100) COLLATE pg_catalog."default" NOT NULL,
+    
     nomeusuario character varying(20) COLLATE pg_catalog."default" NOT NULL,
+    
     senha character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    
     primeironome character varying(30) COLLATE pg_catalog."default" NOT NULL,
+    
     sobrenome character varying(50) COLLATE pg_catalog."default",
+    
     CONSTRAINT usuario_pkey PRIMARY KEY (idusuario),
+    
     CONSTRAINT usuario_email_key UNIQUE (email),
+    
     CONSTRAINT usuario_nomeusuario_key UNIQUE (nomeusuario)
+    
 )
 
 CREATE TABLE IF NOT EXISTS public.categoria
@@ -49,4 +59,4 @@ insert into categoria values (2, 'Cuidados')
 
 ### 2. Verificar no arquivo DAO se o username e senha estão corretos
 .
-### 3. Acessar o localhost na porta indicada e colocar \textbf{\usuario} para verificar a pagina do CRUD de usuário, \textbf{\artigo} para verificar a pagina do CRUD de artigos e  \textbf{\faq} para verificar a pagina do CRUD de FAQ
+### 3. Acessar o localhost na porta indicada e colocar \usuario para verificar a pagina do CRUD de usuário, \artigo para verificar a pagina do CRUD de artigos e  \faq para verificar a pagina do CRUD de FAQ
