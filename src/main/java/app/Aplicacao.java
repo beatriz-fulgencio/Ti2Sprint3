@@ -17,9 +17,9 @@ public class Aplicacao {
         port(6789);
         
         staticFiles.location("/public");
+ 
         
-        
-    
+        get("/", (request, response) -> artigoService.getHome());
         
         get("/artigo", (request, response) -> artigoService.getHome());
         

@@ -121,7 +121,7 @@ public class ArtigoService {
 		form = form.replaceFirst("<UM-ARTIGO>", umArtigo);
 		
 		String list = new String("<table width=\"80%\" align=\"center\" bgcolor=\"#f3f3f3\">");
-		list += "\n<tr><td colspan=\"6\" align=\"left\"><font size=\"+2\"><b>&nbsp;&nbsp;&nbsp;CatÃ¡logo de Artigos</b></font></td></tr>\n" +
+		list += "\n<tr><td colspan=\"6\" align=\"left\"><font size=\"+2\"><b>&nbsp;&nbsp;&nbsp;Catálogo de Artigos</b></font></td></tr>\n" +
 				"\n<tr><td colspan=\"6\">&nbsp;</td></tr>\n" +
     			"\n<tr>\n" + 
         		"\t<td><a href=\"/artigo/list/" + FORM_ORDERBY_ID_ARTIGO + "\"><b>Id Artigo</b></a></td>\n" +
