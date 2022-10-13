@@ -80,7 +80,7 @@ public class FaqService {
 			umFaq += "\t<form class=\"form--register\" action=\"" + action + "\" method=\"post\" id=\"form-add\">";
 			umFaq += "\t<table width=\"80%\" bgcolor=\"#f3f3f3\" align=\"center\">";
 			umFaq += "\t\t<tr>";
-			umFaq += "\t\t\t<td colspan=\"3\" align=\"left\"><font size=\"+2\"><b>&nbsp;&nbsp;&nbsp;" + name + "</b></font></td>";
+			umFaq += "\t\t\t<td colspan=\"3\" align=\"center\"><font size=\"+2\"><b>&nbsp;&nbsp;&nbsp;" + name + "</b></font></td>";
 			umFaq += "\t\t</tr>";
 			umFaq += "\t\t<tr>";
 			umFaq += "\t\t\t<td colspan=\"3\" align=\"left\">&nbsp;</td>";
@@ -111,7 +111,7 @@ public class FaqService {
 		form = form.replaceFirst("<UM-FAQ>", umFaq);
 		
 		String list = new String("<table width=\"80%\" align=\"center\" bgcolor=\"#f3f3f3\">");
-		list += "\n<tr><td colspan=\"6\" align=\"left\"><font size=\"+2\"><b>&nbsp;&nbsp;&nbsp;RelaÃ§Ã£o de UsuÃ¡rios</b></font></td></tr>\n" +
+		list += "\n<tr><td colspan=\"6\" align=\"left\"><font size=\"+2\"><b>&nbsp;&nbsp;&nbsp;Relação FAQ</b></font></td></tr>\n" +
 				"\n<tr><td colspan=\"6\">&nbsp;</td></tr>\n" +
     			"\n<tr>\n" + 
         		"\t<td><a href=\"/faq/list/" + FORM_ORDERBY_ID + "\"><b>Id</b></a></td>\n" +
@@ -132,7 +132,7 @@ public class FaqService {
 		int i = 0;
 		String bgcolor = "";
 		for (Faq f : faqs) {
-			bgcolor = (i++ % 2 == 0) ? "#fff5dd" : "#dddddd";
+			bgcolor = (i++ % 2 == 0) ? "#dcebff" : "#858fbb";
 			list += "\n<tr bgcolor=\""+ bgcolor +"\">\n" + 
             		  "\t<td>" + f.getId() + "</td>\n" +
             		  "\t<td>" + f.getPergunta() + "</td>\n" +

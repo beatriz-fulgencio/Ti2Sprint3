@@ -142,7 +142,7 @@ public class ArtigoService {
 		int i = 0;
 		String bgcolor = "";
 		for (Artigo a : artigos) {
-			bgcolor = (i++ % 2 == 0) ? "#fff5dd" : "#dddddd";
+			bgcolor = (i++ % 2 == 0) ? "#dcebff" : "#858fbb";
 			list += "\n<tr bgcolor=\""+ bgcolor +"\">\n" + 
             		  "\t<td>" + a.getIdArtigo() + "</td>\n" +
             		  "\t<td>" + a.getCategoria() + "</td>\n" +

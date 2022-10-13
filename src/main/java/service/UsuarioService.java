@@ -137,7 +137,7 @@ public class UsuarioService {
 		int i = 0;
 		String bgcolor = "";
 		for (Usuario u : usuarios) {
-			bgcolor = (i++ % 2 == 0) ? "#fff5dd" : "#dddddd";
+			bgcolor = (i++ % 2 == 0) ? "#dcebff" : "#858fbb";
 			list += "\n<tr bgcolor=\""+ bgcolor +"\">\n" + 
             		  "\t<td>" + u.getIdUsuario() + "</td>\n" +
             		  "\t<td>" + u.getNomeUsuario() + "</td>\n" +
