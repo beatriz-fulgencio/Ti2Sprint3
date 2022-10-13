@@ -67,7 +67,7 @@ public class UsuarioService {
 				buttonLabel = "Inserir";
 			} else {
 				action += "update/" + usuario.getIdUsuario();
-				name = "Atualizar Usuário (ID " + usuario.getIdUsuario() + ")";
+				name = "Atualizar Usuário -- " + usuario.getNomeUsuario();
 				nomeUsuario = usuario.getNomeUsuario();
 				buttonLabel = "Atualizar";
 			}
@@ -94,7 +94,7 @@ public class UsuarioService {
 		} else if (tipo == FORM_DETAIL){
 			umUsuario += "\t<table width=\"80%\" bgcolor=\"#f3f3f3\" align=\"center\">";
 			umUsuario += "\t\t<tr>";
-			umUsuario += "\t\t\t<td colspan=\"3\" align=\"left\"><font size=\"+2\"><b>&nbsp;&nbsp;&nbsp;Detalhar Usuario (ID " + usuario.getIdUsuario() + ")</b></font></td>";
+			umUsuario += "\t\t\t<td colspan=\"3\" align=\"left\"><font size=\"+2\"><b>&nbsp;&nbsp;&nbsp;Detalhar Usuario -- " + usuario.getNomeUsuario() + "</b></font></td>";
 			umUsuario += "\t\t</tr>";
 			umUsuario += "\t\t<tr>";
 			umUsuario += "\t\t\t<td colspan=\"3\" align=\"left\">&nbsp;</td>";
